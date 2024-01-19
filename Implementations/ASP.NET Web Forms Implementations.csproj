@@ -125,6 +125,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="InsertMultipleRec2.aspx" />
+    <Content Include="InsertMultipleRec2.html" />
     <Content Include="InsertUpdateDelete.aspx" />
     <Content Include="kudvenkat.aspx" />
     <Content Include="MultipleValueInsert.aspx" />
@@ -187,8 +189,16 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dt\Columns.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMultipleRec2.aspx.cs">
+      <DependentUpon>InsertMultipleRec2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertMultipleRec2.aspx.designer.cs">
+      <DependentUpon>InsertMultipleRec2.aspx</DependentUpon>
     </Compile>
     <Compile Include="InsertUpdateDelete.aspx.cs">
       <DependentUpon>InsertUpdateDelete.aspx</DependentUpon>
