@@ -124,6 +124,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Handler1.ashx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="InsertMultipleRec2.aspx" />
     <Content Include="InsertMultipleRec2.html" />
@@ -192,6 +193,9 @@
     <Compile Include="Dt\Columns.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
     <Compile Include="InsertMultipleRec2.aspx.cs">
       <DependentUpon>InsertMultipleRec2.aspx</DependentUpon>

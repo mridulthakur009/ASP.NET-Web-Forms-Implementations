@@ -14,7 +14,7 @@ namespace Implementations
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        }
+        } 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             string cs=ConfigurationManager.ConnectionStrings["testDBConnectionString"].ConnectionString;
@@ -23,6 +23,7 @@ namespace Implementations
             Dt.Columns.Add("RegistrationNumber");
             Dt.Columns.Add("Department");
             Dt.Columns.Add("FatherName");
+
             for (int i = 1; i <= 4; i++)
             {
                 string StudentName = Request.Form["name" + i].ToString();
@@ -31,12 +32,14 @@ namespace Implementations
                 string FatherName = Request.Form["Fname" + i].ToString();
                 Dt.Rows.Add(StudentName, RegistrationNumber, Department, FatherName);
             }
+
             SqlConnection con = new SqlConnection(cs);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "InsertStudentDetails";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = con;
             cmd.Parameters.AddWithValue("@DetailInsersion", Dt);
+            
             try
             {
                 con.Open();
