@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+        <script src="Scripts/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+        //$(document).ready(function () {
+        //    $('#btnSubmit').click(function () {
+        //        var result = $('input[type="radio"]:checked');
+        //        if (result.length > 0) {
+        //            $('#divResults').html(result.val() + " is checked");
+        //        }
+        //        else {
+        //            $('#divResults').html("No radio Button Checked");
+        //        }
+        //    });
+        //});
+
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                var result = $('input[type="radio"]:checked');
+                if (result.length > 0) {
+                $('#divResult').html(result.val() + " is checked");
+            }
+                else {
+                $('#divResult').html("No Checkbox button checked");
+            }
+          });
+        });
+    </script>
+</head>
+<body>
+    Gender:
+    <input type="radio" name="gender" value="Male" />Male
+    <input type="radio" name="gender" value="Female" />Female
+    <br /><br />
+    <input id="btnSubmit" type="submit" value="Submit" />
+    <br /><br />
+    <div id="divResult"></div>
+</body>
+</html>

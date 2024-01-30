@@ -52,7 +52,7 @@ namespace Implementations
                 con.Open();
                 int TotalRows = (int)cmd.ExecuteScalar(); //Select count will give value in integer so we have to take the integer
                                                           //type and ExecuteScalar return Object Type so we must typecast it.
-                Response.Write("Total Rows =" + TotalRows);
+                Response.Write( TotalRows);
 
             }
 
