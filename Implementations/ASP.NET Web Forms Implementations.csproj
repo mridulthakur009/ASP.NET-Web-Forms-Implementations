@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Handler1.ashx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Insert multiple value using TVP.aspx" />
     <Content Include="InsertMultipleRec2.aspx" />
     <Content Include="InsertMultipleRec2.html" />
     <Content Include="InsertUpdateDelete.aspx" />
@@ -165,6 +166,7 @@
     <Content Include="Site.Master" />
     <Content Include="Searching.aspx" />
     <Content Include="Task1.aspx" />
+    <Content Include="Task2.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -187,6 +189,7 @@
     <Compile Include="Checkbox.aspx.designer.cs">
       <DependentUpon>Checkbox.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CodeFile1.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -207,6 +210,13 @@
     </Compile>
     <Compile Include="Handler1.ashx.cs">
       <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Insert multiple value using TVP.aspx.cs">
+      <DependentUpon>Insert multiple value using TVP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insert multiple value using TVP.aspx.designer.cs">
+      <DependentUpon>Insert multiple value using TVP.aspx</DependentUpon>
     </Compile>
     <Compile Include="InsertMultipleRec2.aspx.cs">
       <DependentUpon>InsertMultipleRec2.aspx</DependentUpon>
@@ -264,6 +274,13 @@
     </Compile>
     <Compile Include="Task1.aspx.designer.cs">
       <DependentUpon>Task1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task2.aspx.cs">
+      <DependentUpon>Task2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task2.aspx.designer.cs">
+      <DependentUpon>Task2.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

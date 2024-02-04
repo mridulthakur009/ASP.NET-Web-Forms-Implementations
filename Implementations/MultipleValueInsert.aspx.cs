@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Application;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,11 +14,11 @@ namespace Implementations
     public partial class MultipleValueInsert : System.Web.UI.Page
     {
         private SqlParameter prmReturn;
-
+        code1 code1 = new code1();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string cs = ConfigurationManager.ConnectionStrings["testDBConnectionString"].ConnectionString;
-            SqlConnection con = new SqlConnection(cs);
+            //string cs = ConfigurationManager.ConnectionStrings["testDBConnectionString"].ConnectionString;
+            //SqlConnection con = new SqlConnection(cs);
 
             //DataTable dt = new DataTable();
             //dt.Columns.Add(new DataColumn("ItemNumber", typeof(string)));
@@ -34,24 +35,31 @@ namespace Implementations
             //con.Open();
             //cmd.ExecuteReader();
 
-            DataTable dt = new DataTable();
-            //Add columns  
-            dt.Columns.Add(new DataColumn("ItemNumber", typeof(string)));
-            dt.Columns.Add(new DataColumn("ItemCode", typeof(string)));
-            dt.Columns.Add(new DataColumn("Name", typeof(string)));
-            dt.Columns.Add(new DataColumn("Price", typeof(int)));
-            //Add rows  
-            dt.Rows.Add("1000", "Code1", "Phone1", 20000);
-            dt.Rows.Add("1001", "Code2", "Phone2", 30000);
-            dt.Rows.Add("1002", "Code3", "Phone3", 50000);
+            //DataTable dt = new DataTable();
+            ////Add columns  
+            //dt.Columns.Add(new DataColumn("ItemNumber", typeof(string)));
+            //dt.Columns.Add(new DataColumn("ItemCode", typeof(string)));
+            //dt.Columns.Add(new DataColumn("Name", typeof(string)));
+            //dt.Columns.Add(new DataColumn("Price", typeof(int)));
+            ////Add rows  
+            //dt.Rows.Add("1000", "Code1", "Phone1", 20000);
+            //dt.Rows.Add("1001", "Code2", "Phone2", 30000);
+            //dt.Rows.Add("1002", "Code3", "Phone3", 50000);
 
-            //sqlcon as SqlConnection  
-            SqlCommand sqlcom = new SqlCommand("usp_InsertProducts", con);
-            sqlcom.CommandType = CommandType.StoredProcedure;
-            sqlcom.Parameters.AddWithValue("@tableproducts", dt);
-            sqlcom.Parameters.Add(prmReturn);
-            con.Open();
-            sqlcom.ExecuteNonQuery();
+            ////sqlcon as SqlConnection  
+            //SqlCommand sqlcom = new SqlCommand("usp_InsertProducts", con);
+            //sqlcom.CommandType = CommandType.StoredProcedure;
+            //sqlcom.Parameters.AddWithValue("@tableproducts", dt);
+            //sqlcom.Parameters.Add(prmReturn);
+            //con.Open();
+            //sqlcom.ExecuteNonQuery();
+        }
+
+        
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            code1.newFunc();
         }
     }
 }
+   
