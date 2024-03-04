@@ -41,24 +41,24 @@ namespace Application
             //    // ShiftEndTimeFilter = (Convert.ToInt32(ShiftEndTimeFilter.Split(':')[0]) + 1).ToString() + ":00";
             //}
 
-            DateTime dt = new DateTime();
+            //DateTime dt = new DateTime();
 
            
 
-            DateTime currentDateTime = DateTime.Now;
-            Console.WriteLine(currentDateTime);
-            DateTime cdt = new DateTime();
-            cdt =currentDateTime.AddHours(5);
-            Console.WriteLine(cdt);
-            DateTime negDT = DateTime.Now;
-            negDT = negDT.AddHours(-2);
-            Console.WriteLine(negDT);
+            //DateTime currentDateTime = DateTime.Now;
+            //Console.WriteLine(currentDateTime);
+            //DateTime cdt = new DateTime();
+            //cdt =currentDateTime.AddHours(5);
+            //Console.WriteLine(cdt);
+            //DateTime negDT = DateTime.Now;
+            //negDT = negDT.AddHours(-2);
+            //Console.WriteLine(negDT);
             
 
-            DateTime dt3 = new DateTime(2024, 02, 4, 5, 10, 20);
-            Console.WriteLine(dt3);
-            dt3.AddHours(5);
-            Console.WriteLine(dt3);
+            //DateTime dt3 = new DateTime(2024, 02, 4, 5, 10, 20);
+            //Console.WriteLine(dt3);
+            //dt3.AddHours(5);
+            //Console.WriteLine(dt3);
         }
     }
 }
